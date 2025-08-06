@@ -1,7 +1,7 @@
 # BITSPLIT
 Bill Splitting app that utilize various resource from Microsoft Azure
 
-Untuk menjalankan proyek ini di mesin lokal, perlu untuk menyiapkan sumber daya Azure dan kode lokalnya:
+Untuk menjalankan projek ini di mesin lokal, perlu untuk menyiapkan sumber daya Azure dan kode lokalnya:
 
 - Node.js (v20 hingga terbaru)
 - Azure Functions Core Tools
