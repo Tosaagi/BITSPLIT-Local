@@ -1,3 +1,4 @@
+import React from 'react';
 import { FiUpload, FiLoader, FiCheckCircle } from 'react-icons/fi';
 import { clsx } from 'clsx';
 
@@ -38,7 +39,7 @@ const UploadScreen = ({ onUploadSuccess }) => {
 
         setUploadStatus(STATUS.UPLOADING);
 
-        const functionAppUrl = 'https://billsplitterfunction-node-hjb6gye8f4bsgqdy.eastus-01.azurewebsites.net';
+        const functionAppUrl = 'http://localhost:7071';
         const getSasUrlFunction = `${functionAppUrl}/api/get_upload_url`;
         const getResultsFunction = `${functionAppUrl}/api/get_receipt_results`;
 

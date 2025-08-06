@@ -1,4 +1,4 @@
-import useState from 'react';
+import { useState } from 'react';
 import { FiUsers, FiPlus, FiX } from 'react-icons/fi';
 import StyledButton from './StyledButton';
 import StyledInput from './StyledInput';

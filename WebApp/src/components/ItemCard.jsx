@@ -1,4 +1,4 @@
-import useState from 'react';
+import { useState } from 'react';
 import { FiPlus, FiMinus, FiX, FiTrash2, FiEdit, FiCheck } from 'react-icons/fi';
 import { BiCut } from 'react-icons/bi';
 import StyledButton from './StyledButton';

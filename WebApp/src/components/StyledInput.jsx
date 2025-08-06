@@ -1,3 +1,5 @@
+import React from "react";
+
 const StyledInput = React.forwardRef(({ className, ...props }, ref) => (
   <input
     ref={ref}

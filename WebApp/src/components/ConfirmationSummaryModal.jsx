@@ -1,4 +1,4 @@
-import useState from 'react';
+import { useState } from 'react';
 import { FiCheckCircle, FiXCircle } from 'react-icons/fi';
 import StyledButton from './StyledButton';
 import AlertModal from './AlertModal';
