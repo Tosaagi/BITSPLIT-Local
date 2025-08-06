@@ -5,6 +5,9 @@ Untuk menjalankan proyek ini di mesin lokal, perlu untuk menyiapkan sumber daya 
 
 - Node.js (v20 hingga terbaru)
 - Azure Functions Core Tools
+- Azurite: Emulator untuk Azure Storage yang digunakan untuk pengembangan lokal. Instal dengan perintah berikut di terminal:
+  
+      npm install -g azurite
 - Akun Azure
 
 ## Penyiapan Sumber Daya Azure
@@ -38,7 +41,13 @@ Untuk menjalankan proyek ini di mesin lokal, perlu untuk menyiapkan sumber daya 
 
          npm install
 
-  5) Jalankan server pengembangan Azure Functions lokal:
+  5) Buka terminal baru yang terpisah, lalu jalankan emulator Azurite:
+     
+         azurite
+     
+     Biarkan terminal ini tetap berjalan di latar belakang
+
+  7) Jalankan server pengembangan Azure Functions lokal:
 
          func start
 
@@ -67,3 +76,13 @@ API backend sekarang berjalan, biasanya pada port berikut:
 Browser default Anda akan membuka tab baru dengan aplikasi yang berjalan, biasanya pada port berikut:
 
     http://localhost:3000
+
+CATATAN PENTING: Pada Storage Account yang sudah Anda buat di portal Azure, pastikan untuk menambahkan aturan CORS untuk port anda. Berikut adalah contoh pengaturan yang tepat:
+
+```
+Allowed origins: http://localhost:3000
+Allowed methods: Pilih PUT dan GET (atau pilih semua).
+Allowed headers: *
+Exposed headers: *
+Max age: 3600
+```
