@@ -7,7 +7,7 @@ Untuk menjalankan proyek ini di mesin lokal, perlu untuk menyiapkan sumber daya 
 - Azure Functions Core Tools
 - Akun Azure
 
-1. Penyiapan Sumber Daya Azure
+## Penyiapan Sumber Daya Azure
 a. Azure Storage Account
   1) Masuk ke Azure Portal dan buat Storage Account baru.
   2) Setelah dibuat, buka Storage Account Anda dan masuk ke bagian Access keys. Salin Connection string. Anda akan membutuhkannya nanti.
