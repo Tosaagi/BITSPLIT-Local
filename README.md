@@ -77,7 +77,7 @@ Browser default Anda akan membuka tab baru dengan aplikasi yang berjalan, biasan
 
     http://localhost:3000
 
-CATATAN PENTING: Pada Storage Account yang sudah Anda buat di portal Azure, pastikan untuk menambahkan aturan CORS untuk port anda. Berikut adalah contoh pengaturan yang tepat:
+**CATATAN PENTING**: Pada Storage Account yang sudah Anda buat di portal Azure, pastikan untuk menambahkan aturan CORS untuk port anda. Berikut adalah contoh pengaturan yang tepat:
 
 ```
 Allowed origins: http://localhost:3000
