@@ -34,14 +34,18 @@ Untuk menjalankan projek ini di mesin lokal, perlu untuk menyiapkan sumber daya 
               "billsplitterstorage0725_STORAGE": "YOUR_AZURE_STORAGE_CONNECTION_STRING",
               "DOC_INTELLIGENCE_ENDPOINT": "YOUR_DOCUMENT_INTELLIGENCE_ENDPOINT",
               "DOC_INTELLIGENCE_KEY": "YOUR_DOCUMENT_INTELLIGENCE_KEY"
+            },
+            "Host": {
+              "CORS": "http://localhost:5173",
+              "CORSCredentials": true
             }
           }
 
-  4) Instal dependensi backend:
+  5) Instal dependensi backend:
 
          npm install
 
-  5) Buka terminal baru yang terpisah, lalu jalankan emulator Azurite:
+  6) Buka terminal baru yang terpisah, lalu jalankan emulator Azurite:
      
          azurite
      
