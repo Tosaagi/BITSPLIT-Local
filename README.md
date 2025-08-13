@@ -22,8 +22,8 @@ Untuk menjalankan projek ini di mesin lokal, perlu untuk menyiapkan sumber daya 
   2) Setelah berhasil dibuat, buka bagian Keys and Endpoint pada sumber daya tersebut. Salin Key 1 dan Endpoint URL.
 
 ## Penyiapan Backend (Azure Functions)
-  1) Clone repository ini dan masuk ke direktori root projek.
-  2) Buat file baru bernama `local.settings.json` di root projek.
+  1) Clone repository ini dan masuk ke direktori Function-node.
+  2) Buat file baru bernama `local.settings.json`.
   3) Tempel konten berikut ke dalam local.settings.json, ganti nilai placeholder dengan kunci yang telah disalin dari Azure Portal:
           
           {
@@ -56,7 +56,7 @@ API backend sekarang berjalan, biasanya pada port berikut:
     http://localhost:7071
 
 ## Penyiapan Frontend (React)
-  1) Masuk ke direktori frontend.
+  1) Masuk ke direktori WebApp.
   2) Buka file UploadScreen.jsx. Temukan baris yang mendefinisikan URL backend dan ubah menjadi mengarah ke host fungsi lokal Anda:
 
          // SEBELUM
