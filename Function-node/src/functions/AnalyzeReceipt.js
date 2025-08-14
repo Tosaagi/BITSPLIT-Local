@@ -54,7 +54,7 @@ app.storageBlob('AnalyzeReceipt', {
                     for (const taxItem of receipt.fields.TaxDetails.values) {
                         const props = taxItem.properties || {};
                         const description = props.Description?.content?.replace(/\s/g, '') || `TaxItem${Object.keys(taxFields).length}`;
-                        // For tax details, the 'amount' sub-property is often correct
+                        
                         const amount = props.Amount?.value?.amount ?? 0;
                         if (amount > 0) {
                             taxFields[description] = amount;
